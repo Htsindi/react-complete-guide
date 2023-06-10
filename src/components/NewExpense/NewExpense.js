@@ -1,6 +1,6 @@
 import React from "react";
 
-import NewExpenseForm from "./NewExpenseForm.js";
+import NewExpenseForm from "./NewExpenseForm";
 import "./NewExpense.css";
 
 const NewExpense = () => {
