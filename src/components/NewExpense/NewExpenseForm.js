@@ -70,7 +70,7 @@ const eventHandler = (identifier, value)=>{
       date: new Date(enteredDate),
     };
     //console.log(expenseData);
-    //from newExpense
+    //from NewExpenseform.js -> newExpense.js -> App.js child to parent
     props.onSaveExpenseData(expenseData);
     //Two way binding working with value on input form to clear data on form
     setEnteredTitle("");
@@ -106,7 +106,7 @@ const eventHandler = (identifier, value)=>{
           <input
             type="date"
             min="2019-01-01"
-            max="2023-06-30"
+            max="2050-06-30"
             value={enteredDate}
             onChange={dateChangeHandler}
           />

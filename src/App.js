@@ -2,7 +2,7 @@ import React from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-function App() {
+function App(props) {
   const expenses = [
     {
       id: "e1",
@@ -24,10 +24,15 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
+  //Getting data from new expense
+  const addExpenseHandler = (addNewExpense) => {
+    console.log("In App.js");
+    console.log(addNewExpense);
+  };
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );

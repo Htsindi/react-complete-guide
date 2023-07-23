@@ -13,6 +13,7 @@ const NewExpense = (props) => {
   };
 
   return (
+    //passing from child to parent onSaveExpenseData is getting data from newExpenseForm
     <div className="new-expense">
       <NewExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
     </div>
