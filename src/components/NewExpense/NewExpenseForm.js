@@ -106,7 +106,7 @@ const eventHandler = (identifier, value)=>{
           <input
             type="date"
             min="2019-01-01"
-            max="2023-06-30"
+            max="2024-12-30"
             value={enteredDate}
             onChange={dateChangeHandler}
           />

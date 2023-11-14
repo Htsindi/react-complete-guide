@@ -7,9 +7,9 @@ const Dummy_Expenses = [
     id: "e1",
     title: "Toilet Paper",
     amount: 94.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2019, 7, 14),
   },
-  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2021, 2, 12) },
+  { id: "e2", title: "New TV", amount: 799.49, date: new Date(2020, 2, 12) },
   {
     id: "e3",
     title: "Car Insurance",
@@ -27,7 +27,6 @@ const Dummy_Expenses = [
 function App() {
   //initialise Dummy expenses and new expenses
   const [expenses, setExpenses] = useState(Dummy_Expenses);
-
   const addExpenseHandler = (expense) => {
     //console.log("In app.js");
     //console.log(expense);
